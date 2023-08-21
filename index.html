@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eatly</title>
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="gradient-bottom"></div>
+
+      <!-- Start Header -->
+      <header>
+        <div class="container">
+          <div class="header">
+            <div>
+              <img
+                src="./assets/images/Logoo.png"
+                alt="Logo"
+                style="height: 60px; width: 180px"
+              />
+            </div>
+            <ul class="header__menu">
+              <a href="#program"><li>Programs</li></a>
+              <a href="#services"><li>Services</li></a>
+              <a href="#news"><li>News</li></a>
+              <a href="#about"><li>About Us</li></a>
+            </ul>
+            <button class="button">Let's Talk</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- End Header -->
+
+      <!-- start hero -->
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__left">
+            <h1>
+              Changing your
+              <span class="text second-text eating"></span> habits
+            </h1>
+            <p class="description">
+              Always take care of your health starting from the food menu that
+              you consume every day
+            </p>
+            <div class="hero-buttom">
+              <button class="btn-hero">Explore Menu</button>
+              <div class="secondary-btn">
+                <img src="./assets/circle.svg" alt="" />
+                <p>Watch Video</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__right">
+            <div>
+              <img
+                src="./assets/images/c9b892c0c36b797c4620775d74cef11b.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero -->
+
+      <!-- start clients -->
+      <section class="clients">
+        <div class="container">
+          <div>
+            <img src="./assets/images/Group 11.svg" />
+            <img src="./assets/images/Herbalife_logo logo.svg" />
+          </div>
+        </div>
+      </section>
+      <!-- end clients -->
+      <!-- start  Programs -->
+    </div>
+    <div class="prgrams">
+      <div class="container" id="program">
+        <div class="our-program-header">
+          <div class="program-tittle">
+            <div class="section3-icon-flex">
+              <img src="./assets/images/crown.svg" alt="" />
+            </div>
+            <p class="section3-text">Our Best Programs</p>
+          </div>
+          <div class="arrows">
+            <button class="prevButtonPrgrams" id="prevButtonPrgram">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="nextButton" id="nextButtonProgram">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="all-programs-card">
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M27.0764 5.05943C20.1554 6.06143 18.7829 4.31093 15.6704 1.56143C12.5579 4.31093 11.1854 6.06143 4.26437 5.05943C0.575868 23.4314 15.6704 28.5614 15.6704 28.5614C15.6704 28.5614 30.7649 23.4314 27.0764 5.05943ZM19.3799 20.0249L15.6704 18.0749L11.9624 20.0249L12.6704 15.8954L9.67037 12.9704L13.8164 12.3689L15.6704 8.61143L17.5244 12.3689L21.6704 12.9704L18.6704 15.8939L19.3799 20.0249Z"
+                  fill="#FFC700"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Recipe</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_20_20)">
+                  <path
+                    class="x"
+                    d="M15.7445 2.09171C15.7445 2.09171 14.9851 2.47924 14.2265 3.04995C13.8472 3.3353 13.4633 3.66635 13.1598 4.04762C12.8563 4.42883 12.6089 4.88153 12.6465 5.41087C12.6884 5.99915 13.0871 6.43725 13.5125 6.69993C13.9379 6.96255 14.4209 7.12145 14.8757 7.27819C15.3306 7.43493 15.7576 7.5895 16.0284 7.75678C16.2993 7.92401 16.383 8.03235 16.3965 8.22337C16.3981 8.24505 16.372 8.36083 16.2434 8.52237C16.1148 8.68391 15.9079 8.86983 15.6915 9.03272C15.2586 9.35833 14.807 9.59171 14.807 9.59171L15.288 10.5301C15.288 10.5301 15.8052 10.2668 16.3255 9.87542C16.5857 9.67971 16.8514 9.45196 17.0685 9.17932C17.2856 8.90657 17.4783 8.5676 17.4485 8.14848C17.4067 7.5602 17.0079 7.1221 16.5825 6.85942C16.1572 6.59674 15.6742 6.4379 15.2193 6.28116C14.7644 6.12442 14.3375 5.96985 14.0667 5.80256C13.7958 5.63528 13.712 5.527 13.6985 5.33598C13.6891 5.20403 13.7698 4.97458 13.9848 4.70452C14.1998 4.4344 14.5249 4.14501 14.8605 3.89253C15.5317 3.38762 16.2255 3.03014 16.2255 3.03014L15.7445 2.09171ZM8.24449 4.90421C8.24449 4.90421 7.48511 5.29174 6.7265 5.86245C6.34722 6.1478 5.96332 6.47885 5.6598 6.86012C5.35628 7.24133 5.1089 7.69403 5.14652 8.22337C5.18835 8.81165 5.58714 9.24975 6.01253 9.51243C6.43787 9.77505 6.92085 9.93395 7.37572 10.0907C7.83064 10.2474 8.25755 10.402 8.52837 10.5693C8.79925 10.7365 8.88298 10.8449 8.89652 11.0359C8.8981 11.0575 8.87203 11.1733 8.74341 11.3349C8.6148 11.4964 8.40791 11.6823 8.19146 11.8452C7.75857 12.1708 7.30699 12.4042 7.30699 12.4042L7.78804 13.3426C7.78804 13.3426 8.30519 13.0793 8.8255 12.6879C9.08566 12.4922 9.35144 12.2645 9.56853 11.9918C9.78562 11.7191 9.97828 11.38 9.94851 10.961C9.90668 10.3727 9.50789 9.9346 9.0825 9.67192C8.65716 9.40925 8.17417 9.2504 7.71931 9.09366C7.26439 8.93692 6.83748 8.78235 6.56666 8.61506C6.29578 8.44778 6.21205 8.3395 6.19851 8.14848C6.18914 8.01653 6.26982 7.78708 6.4848 7.51702C6.69984 7.2469 7.02492 6.95751 7.36054 6.70503C8.03167 6.20012 8.72554 5.84264 8.72554 5.84264L8.24449 4.90421ZM23.2445 4.90421C23.2445 4.90421 22.4851 5.29174 21.7265 5.86245C21.3472 6.1478 20.9633 6.47885 20.6598 6.86012C20.3563 7.24133 20.1089 7.69403 20.1465 8.22337C20.1884 8.81165 20.5871 9.24975 21.0125 9.51243C21.4379 9.77505 21.9209 9.93395 22.3757 10.0907C22.8306 10.2474 23.2576 10.402 23.5284 10.5693C23.7993 10.7365 23.883 10.8449 23.8965 11.0359C23.8981 11.0575 23.872 11.1733 23.7434 11.3349C23.6148 11.4964 23.4079 11.6823 23.1915 11.8452C22.7586 12.1708 22.307 12.4042 22.307 12.4042L22.788 13.3426C22.788 13.3426 23.3052 13.0793 23.8255 12.6879C24.0857 12.4922 24.3514 12.2645 24.5685 11.9918C24.7856 11.7191 24.9783 11.38 24.9485 10.961C24.9067 10.3727 24.5079 9.9346 24.0825 9.67192C23.6572 9.40925 23.1742 9.2504 22.7193 9.09366C22.2644 8.93692 21.8375 8.78235 21.5667 8.61506C21.2958 8.44778 21.212 8.3395 21.1985 8.14848C21.1891 8.01653 21.2698 7.78708 21.4848 7.51702C21.6998 7.2469 22.0249 6.95751 22.3605 6.70503C23.0317 6.20012 23.7255 5.84264 23.7255 5.84264L23.2445 4.90421ZM15.0475 11.8772C14.2858 11.8772 13.7706 12.2237 13.3769 12.8144C13.2139 13.0589 13.0823 13.3476 12.9834 13.6619C13.6467 13.5678 14.3352 13.5181 15.0475 13.5181C15.7598 13.5181 16.4483 13.5678 17.1116 13.6619C17.0127 13.3476 16.8811 13.0589 16.7181 12.8144C16.3244 12.2237 15.8092 11.8772 15.0475 11.8772ZM15.0475 14.5725C8.04984 14.5725 3.69486 19.6139 3.41431 24.7681H26.6807C26.4001 19.6139 22.0451 14.5725 15.0475 14.5725V14.5725ZM1.35785 25.0397L0.612183 25.7853C1.6739 26.8471 2.86001 26.8772 3.79751 26.8772H26.2975C27.235 26.8772 28.4211 26.8471 29.4828 25.7853L28.7372 25.0397C27.9239 25.8529 27.235 25.8228 26.2975 25.8228H3.79751C2.86001 25.8228 2.17107 25.8529 1.35785 25.0397ZM6.65771 27.9319L7.8297 29.6899H22.2653L23.4373 27.9319H6.65771Z"
+                    fill="#FFC700"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_20">
+                    <rect
+                      width="30"
+                      height="30"
+                      fill="white"
+                      transform="translate(0.0474854 0.890839)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Recipe</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M23.9862 22.5618H6.48999C6.50249 24.3081 6.59249 26.2018 7.21999 26.8293C7.95249 27.5618 9.13124 27.5618 11.4875 27.5618H18.9875C21.345 27.5618 22.5237 27.5618 23.2562 26.8293C23.8837 26.2018 23.9725 24.3081 23.9862 22.5618Z"
+                  fill="#FFC700"
+                />
+                <path
+                  class="x"
+                  opacity="0.5"
+                  d="M8.98749 6.31184C7.55088 6.3109 6.15781 6.8049 5.04273 7.7107C3.92766 8.61649 3.15868 9.87877 2.8652 11.2851C2.57173 12.6914 2.7717 14.1559 3.43143 15.432C4.09117 16.7082 5.17041 17.7181 6.48749 18.2918V22.5618H23.9875V18.2918C25.3766 17.6856 26.4982 16.5954 27.1435 15.224C27.7888 13.8527 27.914 12.2935 27.4956 10.8368C27.0772 9.38004 26.1438 8.12491 24.8692 7.30495C23.5945 6.48499 22.0653 6.15605 20.5662 6.37934C20.1882 5.26598 19.471 4.29899 18.5153 3.61415C17.5595 2.92931 16.4133 2.56104 15.2375 2.56104C14.0617 2.56104 12.9155 2.92931 11.9597 3.61415C11.004 4.29899 10.2867 5.26598 9.90874 6.37934C9.60372 6.33433 9.29581 6.31177 8.98749 6.31184Z"
+                  fill="#FFBE41"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Recipe</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M27.0764 5.05943C20.1554 6.06143 18.7829 4.31093 15.6704 1.56143C12.5579 4.31093 11.1854 6.06143 4.26437 5.05943C0.575868 23.4314 15.6704 28.5614 15.6704 28.5614C15.6704 28.5614 30.7649 23.4314 27.0764 5.05943ZM19.3799 20.0249L15.6704 18.0749L11.9624 20.0249L12.6704 15.8954L9.67037 12.9704L13.8164 12.3689L15.6704 8.61143L17.5244 12.3689L21.6704 12.9704L18.6704 15.8939L19.3799 20.0249Z"
+                  fill="#FFC700"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Recipe</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+        </div>
+        <div class="all-programs-card hidden">
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M27.0764 5.05943C20.1554 6.06143 18.7829 4.31093 15.6704 1.56143C12.5579 4.31093 11.1854 6.06143 4.26437 5.05943C0.575868 23.4314 15.6704 28.5614 15.6704 28.5614C15.6704 28.5614 30.7649 23.4314 27.0764 5.05943ZM19.3799 20.0249L15.6704 18.0749L11.9624 20.0249L12.6704 15.8954L9.67037 12.9704L13.8164 12.3689L15.6704 8.61143L17.5244 12.3689L21.6704 12.9704L18.6704 15.8939L19.3799 20.0249Z"
+                  fill="#FFC700"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Meals</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M27.0764 5.05943C20.1554 6.06143 18.7829 4.31093 15.6704 1.56143C12.5579 4.31093 11.1854 6.06143 4.26437 5.05943C0.575868 23.4314 15.6704 28.5614 15.6704 28.5614C15.6704 28.5614 30.7649 23.4314 27.0764 5.05943ZM19.3799 20.0249L15.6704 18.0749L11.9624 20.0249L12.6704 15.8954L9.67037 12.9704L13.8164 12.3689L15.6704 8.61143L17.5244 12.3689L21.6704 12.9704L18.6704 15.8939L19.3799 20.0249Z"
+                  fill="#FFC700"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Meals</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M27.0764 5.05943C20.1554 6.06143 18.7829 4.31093 15.6704 1.56143C12.5579 4.31093 11.1854 6.06143 4.26437 5.05943C0.575868 23.4314 15.6704 28.5614 15.6704 28.5614C15.6704 28.5614 30.7649 23.4314 27.0764 5.05943ZM19.3799 20.0249L15.6704 18.0749L11.9624 20.0249L12.6704 15.8954L9.67037 12.9704L13.8164 12.3689L15.6704 8.61143L17.5244 12.3689L21.6704 12.9704L18.6704 15.8939L19.3799 20.0249Z"
+                  fill="#FFC700"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Meals</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M27.0764 5.05943C20.1554 6.06143 18.7829 4.31093 15.6704 1.56143C12.5579 4.31093 11.1854 6.06143 4.26437 5.05943C0.575868 23.4314 15.6704 28.5614 15.6704 28.5614C15.6704 28.5614 30.7649 23.4314 27.0764 5.05943ZM19.3799 20.0249L15.6704 18.0749L11.9624 20.0249L12.6704 15.8954L9.67037 12.9704L13.8164 12.3689L15.6704 8.61143L17.5244 12.3689L21.6704 12.9704L18.6704 15.8939L19.3799 20.0249Z"
+                  fill="#FFC700"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Meals</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+        </div>
+        <div class="all-programs-card hidden">
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M27.0764 5.05943C20.1554 6.06143 18.7829 4.31093 15.6704 1.56143C12.5579 4.31093 11.1854 6.06143 4.26437 5.05943C0.575868 23.4314 15.6704 28.5614 15.6704 28.5614C15.6704 28.5614 30.7649 23.4314 27.0764 5.05943ZM19.3799 20.0249L15.6704 18.0749L11.9624 20.0249L12.6704 15.8954L9.67037 12.9704L13.8164 12.3689L15.6704 8.61143L17.5244 12.3689L21.6704 12.9704L18.6704 15.8939L19.3799 20.0249Z"
+                  fill="#FFC700"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Recipe</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_20_20)">
+                  <path
+                    class="x"
+                    d="M15.7445 2.09171C15.7445 2.09171 14.9851 2.47924 14.2265 3.04995C13.8472 3.3353 13.4633 3.66635 13.1598 4.04762C12.8563 4.42883 12.6089 4.88153 12.6465 5.41087C12.6884 5.99915 13.0871 6.43725 13.5125 6.69993C13.9379 6.96255 14.4209 7.12145 14.8757 7.27819C15.3306 7.43493 15.7576 7.5895 16.0284 7.75678C16.2993 7.92401 16.383 8.03235 16.3965 8.22337C16.3981 8.24505 16.372 8.36083 16.2434 8.52237C16.1148 8.68391 15.9079 8.86983 15.6915 9.03272C15.2586 9.35833 14.807 9.59171 14.807 9.59171L15.288 10.5301C15.288 10.5301 15.8052 10.2668 16.3255 9.87542C16.5857 9.67971 16.8514 9.45196 17.0685 9.17932C17.2856 8.90657 17.4783 8.5676 17.4485 8.14848C17.4067 7.5602 17.0079 7.1221 16.5825 6.85942C16.1572 6.59674 15.6742 6.4379 15.2193 6.28116C14.7644 6.12442 14.3375 5.96985 14.0667 5.80256C13.7958 5.63528 13.712 5.527 13.6985 5.33598C13.6891 5.20403 13.7698 4.97458 13.9848 4.70452C14.1998 4.4344 14.5249 4.14501 14.8605 3.89253C15.5317 3.38762 16.2255 3.03014 16.2255 3.03014L15.7445 2.09171ZM8.24449 4.90421C8.24449 4.90421 7.48511 5.29174 6.7265 5.86245C6.34722 6.1478 5.96332 6.47885 5.6598 6.86012C5.35628 7.24133 5.1089 7.69403 5.14652 8.22337C5.18835 8.81165 5.58714 9.24975 6.01253 9.51243C6.43787 9.77505 6.92085 9.93395 7.37572 10.0907C7.83064 10.2474 8.25755 10.402 8.52837 10.5693C8.79925 10.7365 8.88298 10.8449 8.89652 11.0359C8.8981 11.0575 8.87203 11.1733 8.74341 11.3349C8.6148 11.4964 8.40791 11.6823 8.19146 11.8452C7.75857 12.1708 7.30699 12.4042 7.30699 12.4042L7.78804 13.3426C7.78804 13.3426 8.30519 13.0793 8.8255 12.6879C9.08566 12.4922 9.35144 12.2645 9.56853 11.9918C9.78562 11.7191 9.97828 11.38 9.94851 10.961C9.90668 10.3727 9.50789 9.9346 9.0825 9.67192C8.65716 9.40925 8.17417 9.2504 7.71931 9.09366C7.26439 8.93692 6.83748 8.78235 6.56666 8.61506C6.29578 8.44778 6.21205 8.3395 6.19851 8.14848C6.18914 8.01653 6.26982 7.78708 6.4848 7.51702C6.69984 7.2469 7.02492 6.95751 7.36054 6.70503C8.03167 6.20012 8.72554 5.84264 8.72554 5.84264L8.24449 4.90421ZM23.2445 4.90421C23.2445 4.90421 22.4851 5.29174 21.7265 5.86245C21.3472 6.1478 20.9633 6.47885 20.6598 6.86012C20.3563 7.24133 20.1089 7.69403 20.1465 8.22337C20.1884 8.81165 20.5871 9.24975 21.0125 9.51243C21.4379 9.77505 21.9209 9.93395 22.3757 10.0907C22.8306 10.2474 23.2576 10.402 23.5284 10.5693C23.7993 10.7365 23.883 10.8449 23.8965 11.0359C23.8981 11.0575 23.872 11.1733 23.7434 11.3349C23.6148 11.4964 23.4079 11.6823 23.1915 11.8452C22.7586 12.1708 22.307 12.4042 22.307 12.4042L22.788 13.3426C22.788 13.3426 23.3052 13.0793 23.8255 12.6879C24.0857 12.4922 24.3514 12.2645 24.5685 11.9918C24.7856 11.7191 24.9783 11.38 24.9485 10.961C24.9067 10.3727 24.5079 9.9346 24.0825 9.67192C23.6572 9.40925 23.1742 9.2504 22.7193 9.09366C22.2644 8.93692 21.8375 8.78235 21.5667 8.61506C21.2958 8.44778 21.212 8.3395 21.1985 8.14848C21.1891 8.01653 21.2698 7.78708 21.4848 7.51702C21.6998 7.2469 22.0249 6.95751 22.3605 6.70503C23.0317 6.20012 23.7255 5.84264 23.7255 5.84264L23.2445 4.90421ZM15.0475 11.8772C14.2858 11.8772 13.7706 12.2237 13.3769 12.8144C13.2139 13.0589 13.0823 13.3476 12.9834 13.6619C13.6467 13.5678 14.3352 13.5181 15.0475 13.5181C15.7598 13.5181 16.4483 13.5678 17.1116 13.6619C17.0127 13.3476 16.8811 13.0589 16.7181 12.8144C16.3244 12.2237 15.8092 11.8772 15.0475 11.8772ZM15.0475 14.5725C8.04984 14.5725 3.69486 19.6139 3.41431 24.7681H26.6807C26.4001 19.6139 22.0451 14.5725 15.0475 14.5725V14.5725ZM1.35785 25.0397L0.612183 25.7853C1.6739 26.8471 2.86001 26.8772 3.79751 26.8772H26.2975C27.235 26.8772 28.4211 26.8471 29.4828 25.7853L28.7372 25.0397C27.9239 25.8529 27.235 25.8228 26.2975 25.8228H3.79751C2.86001 25.8228 2.17107 25.8529 1.35785 25.0397ZM6.65771 27.9319L7.8297 29.6899H22.2653L23.4373 27.9319H6.65771Z"
+                    fill="#FFC700"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_20">
+                    <rect
+                      width="30"
+                      height="30"
+                      fill="white"
+                      transform="translate(0.0474854 0.890839)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Recipe</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M23.9862 22.5618H6.48999C6.50249 24.3081 6.59249 26.2018 7.21999 26.8293C7.95249 27.5618 9.13124 27.5618 11.4875 27.5618H18.9875C21.345 27.5618 22.5237 27.5618 23.2562 26.8293C23.8837 26.2018 23.9725 24.3081 23.9862 22.5618Z"
+                  fill="#FFC700"
+                />
+                <path
+                  class="x"
+                  opacity="0.5"
+                  d="M8.98749 6.31184C7.55088 6.3109 6.15781 6.8049 5.04273 7.7107C3.92766 8.61649 3.15868 9.87877 2.8652 11.2851C2.57173 12.6914 2.7717 14.1559 3.43143 15.432C4.09117 16.7082 5.17041 17.7181 6.48749 18.2918V22.5618H23.9875V18.2918C25.3766 17.6856 26.4982 16.5954 27.1435 15.224C27.7888 13.8527 27.914 12.2935 27.4956 10.8368C27.0772 9.38004 26.1438 8.12491 24.8692 7.30495C23.5945 6.48499 22.0653 6.15605 20.5662 6.37934C20.1882 5.26598 19.471 4.29899 18.5153 3.61415C17.5595 2.92931 16.4133 2.56104 15.2375 2.56104C14.0617 2.56104 12.9155 2.92931 11.9597 3.61415C11.004 4.29899 10.2867 5.26598 9.90874 6.37934C9.60372 6.33433 9.29581 6.31177 8.98749 6.31184Z"
+                  fill="#FFBE41"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Recipe</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+          <div class="programs-card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  class="x"
+                  d="M27.0764 5.05943C20.1554 6.06143 18.7829 4.31093 15.6704 1.56143C12.5579 4.31093 11.1854 6.06143 4.26437 5.05943C0.575868 23.4314 15.6704 28.5614 15.6704 28.5614C15.6704 28.5614 30.7649 23.4314 27.0764 5.05943ZM19.3799 20.0249L15.6704 18.0749L11.9624 20.0249L12.6704 15.8954L9.67037 12.9704L13.8164 12.3689L15.6704 8.61143L17.5244 12.3689L21.6704 12.9704L18.6704 15.8939L19.3799 20.0249Z"
+                  fill="#FFC700"
+                />
+              </svg>
+            </div>
+            <p class="text-programs">Healthy Recipe</p>
+            <p class="text-thin-programs">
+              Healthier Recipes, from food & nutrition experts
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="page3" id="services">
+        <div class="container">
+          <div class="page3-flex">
+            <div class="page3-left">
+              <div class="page3-left-side">
+                <img src="./assets/images/image2.png" />
+              </div>
+            </div>
+            <div class="page3-right-side">
+              <div class="page3-text-icon">
+                <div class="icon">
+                  <img src="./assets/images/basil_diamond-solid.svg" />
+                </div>
+                <p class="page3-text">Our Best Prgrams</p>
+              </div>
+
+              <p class="page3-description">
+                Always take care of your health starting from the food menu that
+                you consume every day
+              </p>
+              <div>
+                <fieldset class="page3-card">
+                  <legend
+                    class="icon"
+                    style="margin-left: 22px; height: 50px; width: 50px"
+                  >
+                    <img src="./assets/images/Vector (2).svg" />
+                  </legend>
+                  <p class="text-card-page3">Healthy Meals</p>
+                  <p class="text-thin-page3">
+                    Healthier Recipes, from food & nutrition experts
+                  </p>
+                </fieldset>
+                <fieldset class="page3-card">
+                  <legend
+                    class="icon"
+                    style="margin-left: 22px; height: 50px; width: 50px"
+                  >
+                    <img src="./assets/images/Vector (3).svg" />
+                  </legend>
+                  <p class="text-card-page3">Healthy Lifes</p>
+                  <p class="text-thin-page3">
+                    Healthier Recipes, from food & nutrition experts
+                  </p>
+                </fieldset>
+                <fieldset class="page3-card">
+                  <legend
+                    class="icon"
+                    style="margin-left: 22px; height: 50px; width: 50px"
+                  >
+                    <img src="./assets/images/Vector (4).svg" />
+                  </legend>
+                  <p class="text-card-page3">Healthy Lifes</p>
+                  <p class="text-thin-page3">
+                    Healthier Recipes, from food & nutrition experts
+                  </p>
+                </fieldset>
+                <fieldset class="page3-card">
+                  <legend
+                    class="icon"
+                    style="margin-left: 22px; height: 50px; width: 50px"
+                  >
+                    <img src="./assets/images/Vector (5).svg" />
+                  </legend>
+                  <p class="text-card-page3">Healthy Lifes</p>
+                  <p class="text-thin-page3">
+                    Healthier Recipes, from food & nutrition experts
+                  </p>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page4">
+      <div class="container">
+        <div class="page4-flex">
+          <div class="icon"><img src="./assets/images/Vector (6).svg" /></div>
+          <p class="page-text-wide">Get Started With <span>Eatly</span></p>
+          <p class="description">
+            Always take care of your health starting from the food menu that you
+            consume every day
+          </p>
+          <button class="btn-hero">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div class="page5">
+      <div class="container">
+        <div class="page3-flex">
+          <div class="page3-left">
+            <div class="page3-text-icon">
+              <div class="icon">
+                <img src="./assets/images/Vector (7).svg" />
+              </div>
+              <p class="page3-text">Our Best Prgrams</p>
+            </div>
+
+            <p class="page3-description">
+              Always take care of your health starting from the food menu that
+              you consume every day
+            </p>
+            <div class="scroll-container">
+              <div class="page5-scroll">
+                <div class="page3-text-icon" style="padding: 10px">
+                  <div class="icon">
+                    <img src="./assets/images/Vector (8).svg" />
+                  </div>
+                  <p class="text-card-page3" style="margin-top: 20px">
+                    Healthy Recipe
+                  </p>
+                </div>
+              </div>
+              <div class="page5-scroll">
+                <div class="page3-text-icon" style="padding: 10px">
+                  <div class="icon">
+                    <img src="./assets/images/Vector (9).svg" />
+                  </div>
+                  <p class="text-card-page3" style="margin-top: 20px">
+                    Healthy Recipe
+                  </p>
+                </div>
+              </div>
+              <div class="page5-scroll">
+                <div class="page3-text-icon" style="padding: 10px">
+                  <div class="icon">
+                    <img src="./assets/images/Vector (10).svg" />
+                  </div>
+                  <p class="text-card-page3" style="margin-top: 20px">
+                    Healthy Recipe
+                  </p>
+                </div>
+              </div>
+              <div class="page5-scroll">
+                <div class="page3-text-icon" style="padding: 10px">
+                  <div class="icon">
+                    <img src="./assets/images/Vector (7).svg" />
+                  </div>
+                  <p class="text-card-page3" style="margin-top: 20px">
+                    Healthy Recipe
+                  </p>
+                </div>
+              </div>
+              <div class="page5-scroll">
+                <div class="page3-text-icon" style="padding: 10px">
+                  <div class="icon">
+                    <img src="./assets/images/Vector (8).svg" />
+                  </div>
+                  <p class="text-card-page3" style="margin-top: 20px">
+                    Healthy Recipe
+                  </p>
+                </div>
+              </div>
+              <div class="page5-scroll">
+                <div class="page3-text-icon" style="padding: 10px">
+                  <div class="icon">
+                    <img src="./assets/images/Vector (9).svg" />
+                  </div>
+                  <p class="text-card-page3" style="margin-top: 20px">
+                    Healthy Recipe
+                  </p>
+                </div>
+              </div>
+              <div class="page5-scroll">
+                <div class="page3-text-icon" style="padding: 10px">
+                  <div class="icon">
+                    <img src="./assets/images/Vector (10).svg" />
+                  </div>
+                  <p class="text-card-page3" style="margin-top: 20px">
+                    Healthy Recipe
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="arrows">
+              <button class="prevButton" id="prevButton">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button class="nextButton" id="nextButton">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div class="page5-right">
+              <div class="panel" id="news">
+                <div class="page5-rectangle-out">
+                  <div class="page5-rectangle-in">
+                    <img src="./assets/images/eat.png" />
+                  </div>
+                  <p>Red Onions With Chopped Cabbage</p>
+                  <button class="button">Try Now1</button>
+                </div>
+                <div class="page5-rectangle-out">
+                  <div class="page5-rectangle-in">
+                    <img src="./assets/images/photo2.png .png" />
+                  </div>
+                  <p>Red Onions With Chopped Cabbage</p>
+                  <button class="button">Try Now2</button>
+                </div>
+              </div>
+              <div class="panel hidden">
+                <div class="page5-rectangle-out">
+                  <div class="page5-rectangle-in">
+                    <img src="./assets/images/photo.png" />
+                  </div>
+                  <p>Red Onions With Chopped Cabbage</p>
+                  <button class="button">Try Now3</button>
+                </div>
+                <div class="page5-rectangle-out">
+                  <div class="page5-rectangle-in">
+                    <img src="./assets/images/eat.png" />
+                  </div>
+                  <p>Red Onions With Chopped Cabbage</p>
+                  <button class="button">Try Now4</button>
+                </div>
+              </div>
+              <div class="panel hidden">
+                <div class="page5-rectangle-out">
+                  <div class="page5-rectangle-in">
+                    <img src="./assets/images/photo2.png .png" />
+                  </div>
+                  <p>Red Onions With Chopped Cabbage</p>
+                  <button class="button">Try Now5</button>
+                </div>
+                <div class="page5-rectangle-out">
+                  <div class="page5-rectangle-in">
+                    <img src="./assets/images/photo.png" />
+                  </div>
+                  <p>Red Onions With Chopped Cabbage</p>
+                  <button class="button">Try Now6</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page3" id="about">
+      <div class="container">
+        <div class="page3-flex">
+          <div class="page3-left">
+            <div class="page3-left-side">
+              <img src="./assets/images/img-girl.png" />
+            </div>
+          </div>
+
+          <div class="page3-right-side" style="margin-top: 50px">
+            <div class="page3-text-icon">
+              <div class="icon">
+                <img src="./assets/images/basil_diamond-solid.svg" />
+              </div>
+              <p class="page3-text">Our Best Prgrams</p>
+            </div>
+
+            <p class="page3-description">
+              Always take care of your health starting from the food menu that
+              you consume every day
+            </p>
+            <div>
+              <fieldset class="page3-card" style="width: 535px; height: 280px">
+                <legend
+                  class="icon"
+                  style="margin-left: 22px; height: 50px; width: 50px"
+                >
+                  <img src="./assets/images/Vector (2).svg" />
+                </legend>
+                <p class="text-thin-last">
+                  Healthier Recipes, from food & nutrition experts Always take
+                  care of your health starting from the food menu that you
+                  consume every day ealthier Recipes, from food & nutrition
+                  experts Always take care of your health starting
+                </p>
+                <p class="text-card-page3" style="margin-top: 35px">
+                  Healthy Recipe
+                </p>
+                <p class="text-thin-last" style="margin-top: -30px">
+                  Freelancer
+                </p>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="flex-footer">
+          <div class="logo">
+            <img src="./assets/images/Logoo.png" style="margin-left: -50px" />
+            <p class="text-footer">
+              Always take care of your health starting from the food menu that
+              you consume every day
+            </p>
+          </div>
+          <div class="flex-footer" style="padding-top: 15px">
+            <div>
+              <p class="text-card-page3">About</p>
+              <p class="text-thin-footer">About us News & Articies</p>
+            </div>
+            <div>
+              <p class="text-card-page3">Support</p>
+              <p class="text-thin-footer">Help Center Our COVID-9 Response</p>
+            </div>
+            <div>
+              <p class="text-card-page3">Resources</p>
+              <p class="text-thin-footer">FAO How it works Partners</p>
+            </div>
+            <div>
+              <p class="text-card-page3">company</p>
+              <p class="text-thin-footer">FAO How it works Partners</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
